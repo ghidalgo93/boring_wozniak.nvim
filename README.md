@@ -1,7 +1,13 @@
 # boring_wozniak.nvim
-Nvim plugin to generate &amp; insert random variable names similar to docker container names
+Nvim plugin to generate random variable names similar to docker container names
 
-## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Structure
-[![Structure](https://images.repography.com/37399900/ghidalgo93/boring_wozniak.nvim/structure/MiguvB7H2PXTvTZzt2RvNeR22-meNcjPijhvsVd8pz4/IBILKCc-MzMDIhE40WiYFUVeSvx9rXonxm1nPp_YrJo_table.svg)](https://github.com/ghidalgo93/boring_wozniak.nvim)
+In my own development and testing I often want to create random variable names on the fly to ensure
+tests are unique and didn't want to rely on an external library.
 
+
+TODO:
+[] add functionality to pass in your own lists to generate random names from
+    example: people = {"anne", "john", ... "hodor"} -> nifty_hodor
+[] add functionality to decide how to format name
+    example: adjective_animal, animal_adjective, adjective_person -> ibex_fast
 
