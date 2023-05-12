@@ -5,11 +5,7 @@ local M = {}
 -- 	print(opts, "Options: ")
 -- end
 
--- functions we need
--- random
--- animals[math.random(#animals)]
---
--- vim insert function
+-- vim api insert function
 local function insert(text)
 	local position = vim.api.nvim_win_get_cursor(0)[2]
 	local line = vim.api.nvim_get_current_line()
