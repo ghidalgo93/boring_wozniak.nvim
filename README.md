@@ -11,8 +11,8 @@ tests are unique and didn't want to rely on an external library.
 - insert random variable name at current location: `lua require("boring_wozniak").random()`
 
 ## TODO:
-[] add functionality to pass in your own lists to generate random names from
-    example: people = {"anne", "john", ... "hodor"} -> nifty_hodor
-[] add functionality to decide how to format name
-    example: adjective_animal, animal_adjective, adjective_person -> ibex_fast
 
+- [] add functionality to pass in your own lists to generate random names from
+    - example: people = {"anne", "john", ... "hodor"} -> nifty_hodor
+- [] add functionality to decide how to format name
+    - example: adjective_animal, animal_adjective, adjective_person -> ibex_fast
