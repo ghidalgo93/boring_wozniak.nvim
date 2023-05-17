@@ -16,3 +16,5 @@ tests are unique and didn't want to rely on an external library.
     - example: people = {"anne", "john", ... "hodor"} -> nifty_hodor
 - [ ] add functionality to decide how to format name
     - example: adjective_animal, animal_adjective, adjective_person -> ibex_fast
+- [ ] add random_string() to return the string instead of using vim api to insert at current location
+- [ ] add memory cache to prevent same variable (maybe just in session?)
