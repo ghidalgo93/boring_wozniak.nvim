@@ -12,6 +12,13 @@ tests are unique and didn't want to rely on an external library.
 ## Usage
 
 - insert random variable name at current location: `lua require("boring_wozniak").random()`
+- returns random variable as a string: `lua require('boring_wozniak).random_string()`
+
+My current implementation uses the insertion via the vim api + remap in insert mode:
+
+```
+vim.keymap.set("i", ",r", require("boring_wozniak").random, { noremap = true, silent = true })
+```
 
 ## TODO
 
