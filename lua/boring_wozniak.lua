@@ -20,6 +20,8 @@ local animals = require("animals")
 local adjectives = require("adjectives")
 
 --[[ 
+--Inserts a string with randomized {adjective}_{animal} into the current cursor position
+--
 --Example usage:
 --lua require("boring_wozniak").random()
 --]]
@@ -28,6 +30,19 @@ M.random = function()
 	local randomAdjective = adjectives[math.random(#adjectives)]
 	local randomName = randomAdjective .. "_" .. randomAnimal
 	insert(randomName)
+end
+
+--[[ 
+-- Returns a string with randomized {adjective}_{animal}
+--
+--Example usage:
+--lua require("boring_wozniak").random_string()
+--]]
+M.random_string = function()
+	local randomAnimal = animals[math.random(#animals)]
+	local randomAdjective = adjectives[math.random(#adjectives)]
+	local randomName = randomAdjective .. "_" .. randomAnimal
+	return randomName
 end
 
 return M
