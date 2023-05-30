@@ -11,7 +11,7 @@ local function insert(text)
 	local line = vim.api.nvim_get_current_line()
 	local nline = line:sub(0, position) .. text .. line:sub(position + 1)
 	vim.api.nvim_set_current_line(nline)
-	vim.cmd("norm! w")
+	vim.cmd("norm! e")
 end
 
 -- data we need:
