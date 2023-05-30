@@ -22,9 +22,10 @@ vim.keymap.set("i", ",r", require("boring_wozniak").random, { noremap = true, si
 
 ## TODO
 
+- [x] add random_string() to return the string instead of using vim api to insert at current location
+- [ ] have the random() function place cursor at the end of the word instead of the beginning
 - [ ] add functionality to pass in your own lists to generate random names from
   - example: people = {"anne", "john", ... "hodor"} -> nifty_hodor
 - [ ] add functionality to decide how to format name
   - example: adjective_animal, animal_adjective, adjective_person -> ibex_fast
-- [x] add random_string() to return the string instead of using vim api to insert at current location
 - [ ] add memory cache to prevent same variable (maybe just in session?)
