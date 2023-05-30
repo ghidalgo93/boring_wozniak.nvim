@@ -12,6 +12,7 @@ local function insert(text)
 	local nline = line:sub(0, position) .. text .. line:sub(position + 1)
 	vim.api.nvim_set_current_line(nline)
 	vim.cmd("norm! e")
+	vim.cmd("norm! a")
 end
 
 -- data we need:
